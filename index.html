@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Administrative</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__logo">
+          Innovations<span class="text_thin">ADM</span>
+        </div>
+        <div class="navbar__body">
+          <div class="icon icon_collapse">
+            <i class="fa-solid fa-bars navbar__icon"></i>
+          </div>
+          <div class="navbar__items">
+            <div class="navbar__item">
+              <div class="badge badge_green">348</div>
+              <i class="fa-solid fa-grip navbar__icon"></i>
+            </div>
+            <div class="navbar__item">
+              <div class="badge badge_yellow">3</div>
+              <i class="fa-solid fa-people-group navbar__icon"></i>
+            </div>
+            <div class="navbar__item">
+              <div class="badge badge_red">125</div>
+              <i class="fa-solid fa-person navbar__icon"></i>
+            </div>
+            <div class="navbar__item">
+              <i class="fa-solid fa-circle-user navbar__icon icon_user"></i>
+            </div>
+            <span class="navbar__text">Administrator</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <aside class="side-panel">
+        <div class="user">
+          <div class="user__icon">
+            <i class="fa-solid fa-circle-user icon_user"></i>
+          </div>
+          <div class="user__info">
+            <p class="user__username">Administrator</p>
+            <div class="user__status">
+              <i class="fa-solid fa-circle icon_status"></i>
+              <span>Online</span>
+            </div>
+          </div>
+        </div>
+        <p class="navigation__header">Main Navigation</p>
+        <div class="navigation__item">
+          <p><i class="fa-solid fa-person icon"></i>Admins</p>
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="navigation__item">
+          <p><i class="fa-solid fa-people-group icon"></i>Users</p>
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="navigation__item">
+          <p><i class="fa-solid fa-grip icon"></i>Cards</p>
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="navigation__item">
+          <p><i class="fa-solid fa-list icon"></i>Categories</p>
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+      </aside>
+      <div class="content">
+        <div class="profile">
+          <p class="profile__text">Profile</p>
+          <p class="profile__info">
+            <i class="fa-solid fa-person icon"></i> Admin
+            <span class="text_gray">> Profile</span>
+          </p>
+        </div>
+        <div class="edit-forms">
+          <form class="form form_username">
+            <p class="form__header">Edit Username</p>
+            <div class="input-container">
+              <label class="form__label"
+                >New username
+                <input type="text" placeholder="Username" class="form__input"
+              /></label>
+              <div class="input__options">
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="badge badge_gray">2</div>
+              </div>
+            </div>
+            <div class="input-container">
+              <label class="form__label"
+                >Password
+                <input type="text" placeholder="Password" class="form__input"
+              /></label>
+              <div class="input__options">
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="badge badge_gray">2</div>
+              </div>
+            </div>
+            <hr class="form__line" />
+            <input type="submit" value="Submit" class="form__button" />
+          </form>
+          <form class="form form_password">
+            <p class="form__header">Edit Password</p>
+            <div class="input-container">
+              <label class="form__label"
+                >Old Password
+                <input type="text" placeholder="Password" class="form__input"
+              /></label>
+              <div class="input__options">
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="badge badge_gray">2</div>
+              </div>
+            </div>
+            <div class="input-container">
+              <label class="form__label"
+                >New Password
+                <input type="text" placeholder="Password" class="form__input"
+              /></label>
+              <div class="input__options">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+            </div>
+            <div class="input-container">
+              <label class="form__label"
+                >Confirm password
+                <input type="text" placeholder="Password" class="form__input"
+              /></label>
+              <div class="input__options">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+            </div>
+            <hr class="form__line" />
+            <input type="submit" value="Submit" class="form__button" />
+          </form>
+          <form class="form form_email">
+            <p class="form__header">Edit Email</p>
+            <div class="input-container">
+              <label class="form__label"
+                >New Email
+                <input type="text" placeholder="Email" class="form__input"
+              /></label>
+            </div>
+            <div class="input-container">
+              <label class="form__label"
+                >Password
+                <input type="text" placeholder="Password" class="form__input"
+              /></label>
+              <div class="input__options">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+            </div>
+            <hr class="form__line" />
+            <input type="submit" value="Submit" class="form__button" />
+          </form>
+          <form class="form form_image">
+            <p class="form__header">Edit Image</p>
+            <button class="form__button form__button_image">
+              Please open the image
+            </button>
+            <hr class="form__line" />
+            <input type="submit" value="Submit" class="form__button" />
+          </form>
+        </div>
+        <div class="footer">
+          <p class="text_bold">
+            Develop by <a href="#">onCreate Studio</a> 2015.
+          </p>
+          <p><span class="text_bold">Version</span> 1.0</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
